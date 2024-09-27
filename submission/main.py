@@ -14,6 +14,50 @@ class Submission:
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
 
+    def register_student(self):
+        def submit_email(btn):
+            with output:
+                clear_output()
+                if (len(email_field.value) == 0):
+                    print("Please enter your email")
+                    return
+                self.email = email_field.value.strip().lower()
+
+                btn.description = "Submitting..."
+                btn.disabled = True
+
+                first_submit = Submission.create(self.to_json())
+                if (getattr(first_submit, '_id', '')):
+                    if (getattr(first_submit, 'name', '')):
+                        print(f'Welcome {first_submit.name}!')
+                    else:
+                        print(f'Welcome {first_submit.email}')
+                else:
+                    self.email = ''
+
+                btn.description = "Submit"
+                btn.disabled = False
+
+        text = widgets.HTML(value='''
+            Please enter the email that you used to register for the course.<br />
+            <i>Submit again will reset all of your answers and current score!<i>
+        ''')
+
+        button = widgets.Button(
+            icon='fa-paper-plane', description="Submit", button_style='success', tooltip='Submit')
+        email_field = widgets.Text(
+            value='',
+            placeholder='Email..',
+            description='Your email',
+            disabled=False
+        )
+        button.on_click(submit_email)
+        output = widgets.Output()
+
+        display(text)
+        display(email_field)
+        display(button, output)
+
     def generate_question(self, q_index: int):
         """Generates and displays a question form for the user to answer.
 
