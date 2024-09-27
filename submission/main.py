@@ -159,7 +159,7 @@ class Submission:
         print(f'Your answer is:\n{answer}')
 
     def display_submission_summary(self):
-        """Displays a summary of all questions and corresponding user answers in a two-column format.
+        """Displays a summary of all questions and corresponding user answers in a table format.
         Includes a 'Submit All' button for final submission.
         """
         output = widgets.Output()
@@ -168,34 +168,40 @@ class Submission:
             with output:
                 clear_output()
                 # Check if all questions are answered
-                for idx, answer in enumerate(self.answers):
-                    if not answer['answer']:
-                        print(
-                            f"Please answer question {idx + 1} before submitting.")
-                        return
+                # for idx, answer in enumerate(self.answers):
+                #     if not answer['answer']:
+                #         print(
+                #             f"Please answer question {idx + 1} before submitting.")
+                #         return
 
                 # Submission logic placeholder
                 print("All answers submitted successfully!")
                 btn.description = "Submit All"
                 btn.disabled = False
 
-        # Create header labels
-        headers = widgets.HBox(
-            [widgets.Label("Question Number"), widgets.Label("Your Answer")])
-        display(headers)
+        # Create HTML table with questions and answers
+        table_html = """
+        <table style="width:100%; border-collapse: collapse;" border="1">
+            <tr>
+                <th style="padding: 8px; text-align: left;">Question Number</th>
+                <th style="padding: 8px; text-align: left;">Your Answer</th>
+            </tr>
+        """
 
-        # Display each question number and answer
-        rows = []
         for i, answer in enumerate(self.answers):
-            question_number = widgets.Label(f"Question {i+1}")
-            answer_text = widgets.Label(
-                answer['answer'] or "No answer provided")
-            row = widgets.HBox([question_number, answer_text])
-            rows.append(row)
+            question_number = f"Question {i+1}"
+            user_answer = answer['answer'] or "No answer provided"
+            table_html += f"""
+            <tr>
+                <td style="padding: 8px;">{question_number}</td>
+                <td style="padding: 8px;">{user_answer}</td>
+            </tr>
+            """
 
-        # Display all rows in a vertical layout
-        summary_box = widgets.VBox(rows)
-        display(summary_box)
+        table_html += "</table>"
+
+        # Display the table as HTML
+        display(widgets.HTML(table_html))
 
         # Submit All button
         btn_submit_all = widgets.Button(
