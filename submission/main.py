@@ -204,13 +204,18 @@ class Submission:
 
         display(widgets.HTML(table_html))
 
-        # Submit All button
         btn_submit_all = widgets.Button(
             description="Submit All",
             button_style='success',
-            tooltip='Submit All'
+            tooltip='Submit All',
+            layout=widgets.Layout(width='auto')
         )
+
+        button_box = widgets.HBox([btn_submit_all], layout=widgets.Layout(
+            justify_content='center',
+            width='80%'
+        ))
         btn_submit_all.on_click(submit_all)
 
-        display(btn_submit_all)
+        display(button_box)
         display(output)
