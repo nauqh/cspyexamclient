@@ -177,7 +177,7 @@ class Submission:
                 #         return
 
                 # Submission logic placeholder
-                print("All answers submitted successfully!")
+                print("\nAll answers submitted successfully!")
                 btn.description = "Submit All"
                 btn.disabled = False
 
