@@ -26,14 +26,15 @@ class Submission:
                 btn.description = "Submitting..."
                 btn.disabled = True
 
-                first_submit = Submission.create(self.to_json())
-                if (getattr(first_submit, '_id', '')):
-                    if (getattr(first_submit, 'name', '')):
-                        print(f'Welcome {first_submit.name}!')
-                    else:
-                        print(f'Welcome {first_submit.email}')
-                else:
-                    self.email = ''
+                print(f'Welcome {self.email.split("@")[0]}!')
+                # first_submit = Submission.create(self.to_json())
+                # if (getattr(first_submit, '_id', '')):
+                #     if (getattr(first_submit, 'name', '')):
+                #         print(f'Welcome {first_submit.name}!')
+                #     else:
+                #         print(f'Welcome {first_submit.email}')
+                # else:
+                #     self.email = ''
 
                 btn.description = "Submit"
                 btn.disabled = False
