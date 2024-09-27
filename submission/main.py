@@ -208,12 +208,11 @@ class Submission:
             description="Submit All",
             button_style='success',
             tooltip='Submit All',
-            layout=widgets.Layout(width='auto')
+            layout=widgets.Layout(width='50%')
         )
 
         button_box = widgets.HBox([btn_submit_all], layout=widgets.Layout(
             justify_content='center',
-            width='80%'
         ))
         btn_submit_all.on_click(submit_all)
 
