@@ -8,3 +8,12 @@ This document provides a detailed explanation of Coderschool Exam Client, focusi
 
 ## 1. Output
 <img width="500" src="assets/test_submission.gif">
+
+## 2. Exam notebook
+| Module       | Description       | Link                                                                                  |
+|--------------|-------------------|---------------------------------------------------------------------------------------|
+| M1.1         | Basic SQL         | https://colab.research.google.com/drive/1E3sppN-vjschXS46WTeqZnQSmRBcuggN?usp=sharing |
+| M1.2         | Advanced SQL      | Link                                                                                  |
+| M2.1         | Python 101        | Link                                                                                  |
+| M3.1         | Pandas 101        | Link                                                                                  |
+| M4.1         | Data Visualization| Link                                                                                  |
