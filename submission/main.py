@@ -195,14 +195,13 @@ class Submission:
             user_answer = answer['answer'] or "No answer provided"
             table_html += f"""
             <tr>
-                <td style="padding: 8px; width: 30%;">{question_number}</td>
-                <td style="padding: 8px; width: 70%;">{user_answer}</td>
+                <td style="padding: 8px; width: 20%;">{question_number}</td>
+                <td style="padding: 8px; width: 80%;">{user_answer}</td>
             </tr>
             """
 
         table_html += "</table>"
 
-        # Display the table as HTML
         display(widgets.HTML(table_html))
 
         # Submit All button
