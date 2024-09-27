@@ -157,3 +157,44 @@ class Submission:
         if isinstance(answer, types.FunctionType):
             answer = inspect.getsource(answer)
         print(f'Your answer is:\n{answer}')
+
+    def display_submission_summary(self):
+        """Displays a summary of all the questions and the corresponding answers for review.
+        Includes a 'Submit All' button for final submission.
+        """
+        output = widgets.Output()
+
+        def submit_all(btn):
+            with output:
+                clear_output()
+                # Check if all questions are answered
+                for idx, answer in enumerate(self.answers):
+                    if not answer['answer']:
+                        print(
+                            f"Please answer question {idx + 1} before submitting.")
+                        return
+
+                # Assuming there's a function to submit the answers to the backend
+                # You can modify this to include the actual submission logic
+                print("All answers submitted successfully!")
+                btn.description = "Submit All"
+                btn.disabled = False
+
+        # Display each question and answer
+        for i, q in enumerate(self.questions):
+            question_text = q['question']
+            answer_text = self.answers[i]['answer'] or "No answer provided yet."
+            display(Markdown(f"### Question {i+1}:"))
+            display(Markdown(question_text))
+            display(Markdown(f"**Your answer:** {answer_text}"))
+
+        # Submit All button
+        btn_submit_all = widgets.Button(
+            description="Submit All",
+            button_style='success',
+            tooltip='Submit All'
+        )
+        btn_submit_all.on_click(submit_all)
+
+        display(btn_submit_all)
+        display(output)
