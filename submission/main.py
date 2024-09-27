@@ -7,7 +7,7 @@ import json
 
 class Submission:
     def __init__(self):
-        with open('./questions.json', 'r') as file:
+        with open('questions.json', 'r') as file:
             self.questions = json.load(file)
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
