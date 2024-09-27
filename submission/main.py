@@ -159,7 +159,9 @@ class Submission:
         print(f'Your answer is:\n{answer}')
 
     def display_submission_summary(self):
-        """Displays a summary of all questions and corresponding user answers in a table format.
+        """
+        Displays a summary of all questions and corresponding user answers in a table format.
+        The table has two columns with fixed widths: 30% for the question number and 70% for the answer.
         Includes a 'Submit All' button for final submission.
         """
         output = widgets.Output()
@@ -179,12 +181,12 @@ class Submission:
                 btn.description = "Submit All"
                 btn.disabled = False
 
-        # Create HTML table with questions and answers
+        # Create HTML table with questions and answers, fixed column widths
         table_html = """
         <table style="width:100%; border-collapse: collapse;" border="1">
             <tr>
-                <th style="padding: 8px; text-align: left;">Question Number</th>
-                <th style="padding: 8px; text-align: left;">Your Answer</th>
+                <th style="padding: 8px; text-align: left; width: 30%;">Question Number</th>
+                <th style="padding: 8px; text-align: left; width: 70%;">Your Answer</th>
             </tr>
         """
 
@@ -193,8 +195,8 @@ class Submission:
             user_answer = answer['answer'] or "No answer provided"
             table_html += f"""
             <tr>
-                <td style="padding: 8px;">{question_number}</td>
-                <td style="padding: 8px;">{user_answer}</td>
+                <td style="padding: 8px; width: 30%;">{question_number}</td>
+                <td style="padding: 8px; width: 70%;">{user_answer}</td>
             </tr>
             """
 
