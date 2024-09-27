@@ -1,0 +1,192 @@
+[
+    {
+        "score": 2,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "63ea821febdc63001dd301cd",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What is the main purpose of an ERD (Entity Relationship Diagram)?**\n\n<br/>\n\nA. To visualize the relationships between entities in a database\n\nB. To create a physical database design\n\nC. To develop a database application\n\nD. To store data in a database"
+    },
+    {
+        "score": 2,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "63ea821febdc63001dd301ce",
+        "question": "**What is the main difference between a primary key and a foreign key?**\n\n<br/>\n\nA. A primary key is used to reference data in another table, while a foreign key is a unique identifier for each row in a table\n\nB. A primary key is a unique identifier for each row in a table, while a foreign key is used to reference data in another table\n\nC. A primary key is used in multiple tables, while a foreign key is used in a single table\n\nD. There is no difference between primary key and foreign key",
+        "resultType": "MULTICHOICE_SINGLE"
+    },
+    {
+        "score": 2,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C"
+        ],
+        "_id": "63ea821febdc63001dd301cf",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What is a one-to-many relationship in a database?**\n\n<br/>\n\nA. A relationship where one record in one table can be linked to multiple records in another table\n\nB. A relationship where multiple records in one table can be linked to one record in another table\n\nC. A relationship where multiple records in both tables can be linked to one record in each other's table"
+    },
+    {
+        "score": 2,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "63ea821febdc63001dd301d0",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "In a database of a school, each student can only belong to one class, but each class can have many students. \n\n**Which type of relationship is established between the students and the classes table?**\n\n<br/>\n\nA. One to One\n\nB. One to Many Mandatory\n\nC. One to Many Optional\n\nD. Many to Many"
+    },
+    {
+        "score": 2,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "63ea821febdc63001dd301d1",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "About the schema below, which answer is **WRONG**?\n\n![](https://i.imgur.com/cO8TQWx.png)\n\nA. A invoice must belong to a specific customer\n\nB. A customer must have at least 1 invoice\n\nC. In the Invoices Table, CustomerID is the Foreign Key\n\nD. In the Customers Table, CustomerID is the Primary Key"
+    },
+    {
+        "score": 3,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "_id": "63ea821febdc63001dd301d2",
+        "resultType": "SQL",
+        "question": "**How many products have the word 'chocolate' in their product name?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/Y8xDe9w.png)"
+    },
+    {
+        "score": 3,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d3",
+        "question": "**What are the names and unit prices of the five most expensive products?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/x3jCGYQ.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 3,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d4",
+        "resultType": "SQL",
+        "question": "**Get the list of five countries with the most number of customers staying there.**\n\n<br/>\n\n_Expected output_:(ordered by the number of customer descending)\n\n![](https://i.imgur.com/RHSnPK7.png)"
+    },
+    {
+        "score": 3,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d5",
+        "question": "**Get the list of five countries with the least number of suppliers staying there.**\n\n<br />\n\n_Expected output_:\n\n![](https://i.imgur.com/Z3nScfY.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d6",
+        "resultType": "SQL",
+        "question": "**Retrieve the list of category names with number of products in each category**.\n\n<br />\n\n_Expected output_: (ordered by number of product descending)\n\n![](https://i.imgur.com/r3UZdT7.png)"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d7",
+        "resultType": "SQL",
+        "question": "**Retrieve the names and total sales of the top 5 selling products.**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/Hn7PKFf.png)"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d8",
+        "question": "**Which employees have sold the most?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/GIsp3P4.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301d9",
+        "resultType": "SQL",
+        "question": "**How many orders does the company ship to \"Western Europe\" each year?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/VY3zjgm.png)"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301da",
+        "question": "**What are the company names of the customers who have ordered the product 'Tofu'?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/OkIYI2i.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 8,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301db",
+        "resultType": "SQL",
+        "question": "**Retrieve customer IDs and company names of customer companies that have never placed an order.**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/v8ezSiO.png)"
+    },
+    {
+        "score": 6,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301dc",
+        "question": "**What are the company names of the suppliers that supply only one product?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/uG5poyM.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 6,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301dd",
+        "resultType": "SQL",
+        "question": "**What are the names of employees who have taken orders from customers who live in the same city as the employee?**\n\n<br/>\n\n_Expected output_: (ordered by \"EmployeeID\")\n\n![](https://i.imgur.com/yohxKjS.png)"
+    },
+    {
+        "score": 6,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301de",
+        "resultType": "SQL",
+        "question": "**List the top 5 products based on total quantity ordered.**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/xA2yU1e.png)"
+    },
+    {
+        "score": 6,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301df",
+        "question": "**Find the total number of orders and the total number of customers who have made orders in each country.**\n\n<br/>\n\n_Expected output_: (ordered by \"Total Order\" descending, and \"Total Customers\" ascending)\n\n![](https://i.imgur.com/qJsGkti.png)",
+        "resultType": "SQL"
+    },
+    {
+        "score": 6,
+        "testCases": [],
+        "choices": [],
+        "_id": "63ea821febdc63001dd301e0",
+        "resultType": "SQL",
+        "question": "**Find the average order value for each product category.**\n\n<br/>\n\n_Expected output_: (ordered by Average Order Value descending)\n\n![](https://i.imgur.com/7yLknde.png)"
+    }
+]
