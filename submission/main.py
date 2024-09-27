@@ -107,7 +107,3 @@ class Submission:
         if isinstance(answer, types.FunctionType):
             answer = inspect.getsource(answer)
         print(f'Your answer is:\n{answer}')
-
-
-submission = Submission()
-submission.generate_question(0)
