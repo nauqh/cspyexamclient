@@ -149,6 +149,11 @@ class Submission:
             )
 
     def validate_answer(self, answer):
+        if not getattr(self, 'email', ''):
+            print('Login required')
+            print('Please submit your email')
+            return
+
         if isinstance(answer, types.FunctionType):
             answer = inspect.getsource(answer)
         print(f'Your answer is:\n{answer}')
