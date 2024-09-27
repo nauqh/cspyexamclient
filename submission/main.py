@@ -183,7 +183,7 @@ class Submission:
 
         # Create HTML table with questions and answers, fixed column widths
         table_html = """
-        <table style="width:100%; border-collapse: collapse;" border="1">
+        <table style="width:80%; margin: 0 auto;; border-collapse: collapse;" border="1">
             <tr>
                 <th style="padding: 8px; text-align: left; width: 30%;">Question Number</th>
                 <th style="padding: 8px; text-align: left; width: 70%;">Your Answer</th>
