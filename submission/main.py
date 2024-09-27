@@ -159,7 +159,7 @@ class Submission:
         print(f'Your answer is:\n{answer}')
 
     def display_submission_summary(self):
-        """Displays a summary of all the questions and the corresponding answers for review.
+        """Displays a summary of all questions and corresponding user answers in a two-column format.
         Includes a 'Submit All' button for final submission.
         """
         output = widgets.Output()
@@ -174,19 +174,28 @@ class Submission:
                             f"Please answer question {idx + 1} before submitting.")
                         return
 
-                # Assuming there's a function to submit the answers to the backend
-                # You can modify this to include the actual submission logic
+                # Submission logic placeholder
                 print("All answers submitted successfully!")
                 btn.description = "Submit All"
                 btn.disabled = False
 
-        # Display each question and answer
-        for i, q in enumerate(self.questions):
-            question_text = q['question']
-            answer_text = self.answers[i]['answer'] or "No answer provided yet."
-            display(Markdown(f"### Question {i+1}:"))
-            display(Markdown(question_text))
-            display(Markdown(f"**Your answer:** {answer_text}"))
+        # Create header labels
+        headers = widgets.HBox(
+            [widgets.Label("Question Number"), widgets.Label("Your Answer")])
+        display(headers)
+
+        # Display each question number and answer
+        rows = []
+        for i, answer in enumerate(self.answers):
+            question_number = widgets.Label(f"Question {i+1}")
+            answer_text = widgets.Label(
+                answer['answer'] or "No answer provided")
+            row = widgets.HBox([question_number, answer_text])
+            rows.append(row)
+
+        # Display all rows in a vertical layout
+        summary_box = widgets.VBox(rows)
+        display(summary_box)
 
         # Submit All button
         btn_submit_all = widgets.Button(
