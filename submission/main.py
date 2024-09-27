@@ -3,12 +3,14 @@ from IPython.display import display, clear_output, Markdown
 import types
 import inspect
 import json
+import requests
 
 
 class Submission:
     def __init__(self):
-        with open('https://raw.githubusercontent.com/nauqh/cspyexamclient/refs/heads/master/submission/questions.json', 'r') as file:
-            self.questions = json.load(file)
+        url = 'https://raw.githubusercontent.com/nauqh/cspyexamclient/master/submission/questions.json'
+        response = requests.get(url)
+        self.questions = json.loads(response.content.decode('utf-8'))
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
 
