@@ -1,6 +1,6 @@
 # Coderschool Exam Client
 
-![Version](https://img.shields.io/badge/Latest%20Version-v0.0.1-%2300b4d8.svg?&style=for-the-badge&logo=git&logoColor=white)
+![Version](https://img.shields.io/badge/Latest%20Version-v0.0.2-%2300b4d8.svg?&style=for-the-badge&logo=git&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%230096c7.svg?&style=for-the-badge&logo=python&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 
@@ -9,7 +9,7 @@ Update (28 Sep 2024): Complete exam notebook for M2.1
 ## About the project
 The Coderschool Exam Client (cspyexamclient) is a reimplementation of the legacy system, `cspyclient`, with a focus on managing and processing learner submissions for Data Science exams. Beyond replicating key features from the original system, this version addresses long-standing bugs caused by outdated content and insufficient maintenance.
 
-This new system allows the operations team to take ownership of the exam content, to quickly resolve any issues as they arise. Additionally, it lays the foundation for integrating the [`auto-grading system`](https://github.com/nauqh/autograde) in future iterations, enhancing the efficiency and accuracy of the grading process.
+This new system allows the operations team to take ownership of the exam content, to quickly resolve any issues as they arise. Additionally, it lays the foundation for integrating the [**auto-grading**](https://github.com/nauqh/autograde) system in future iterations, enhancing the efficiency and accuracy of the grading process.
 
 This document (will) provide a detailed explanation of Coderschool Exam Client, focusing on its design, architecture, functionality, and usage. It is intended for developers and engineers working on or maintaining the project.
 
