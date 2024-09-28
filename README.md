@@ -9,9 +9,15 @@ Update (27 Sep 2024): Complete exam notebook for M1.1
 ## About the project
 This document provides a detailed explanation of Coderschool Exam Client, focusing on its design, architecture, functionality, and usage. It is intended for developers and engineers working on or maintaining the project.
 
-Expected output
+## Features
+
+### Submit - Resubmit - Reset
 
 <img width="500" src="assets/test_submission.gif">
+
+## Exam Summary
+
+<img width="500" src="assets/exam_summary.png">
 
 ## Exam notebook
 | Module       | Description       | Link                                                                                  |
