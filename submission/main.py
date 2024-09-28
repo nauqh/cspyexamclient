@@ -4,16 +4,24 @@ import types
 import inspect
 import json
 import requests
+from enum import Enum
 
 
 class Submission:
     __slots__ = ['questions', 'answers', 'email']
 
-    def __init__(self, exam_url: str):
+    class ExamID(Enum):
+        M11 = "M11"
+        M12 = "M12"
+        M21 = "M21"
+        M31 = "M31"
+
+    def __init__(self, exam_url: str, exam_id: ExamID):
         response = requests.get(exam_url)
         self.questions = json.loads(response.content.decode('utf-8'))
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
+        self.exam_id = exam_id
 
     def register_student(self):
         def submit_email(btn):
@@ -179,6 +187,19 @@ class Submission:
 
                 # Submission logic placeholder
                 print("\nAll answers submitted successfully!")
+                exam_id = "your_exam_id_here"
+                payload = {
+                    "email": self.email,
+                    "exam_id": exam_id,
+                    "answers": self.answers
+                }
+                response = requests.post(
+                    "https://cspyclient.up.railway.app", json=payload)
+                if response.status_code == 200:
+                    print("Submission successful!")
+                else:
+                    print(
+                        f"Submission failed with status code {response.status_code}")
                 btn.description = "Submit All"
                 btn.disabled = False
 

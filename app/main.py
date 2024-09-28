@@ -52,3 +52,9 @@ async def add_assignment(data: Exam, db: Session = Depends(get_db)):
     db.commit()
 
     return f"Added new assignment: {exam.name}"
+
+
+@app.get("/exam/{id}", response_model=Exam)
+async def get_exam(id: str, db: Session = Depends(get_db)):
+    exam = db.query(models.Exam).filter(models.Exam.str == id).first()
+    return exam
