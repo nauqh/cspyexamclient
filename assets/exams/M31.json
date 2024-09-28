@@ -172,14 +172,6 @@
         "question": "Write a single line of code to return top 5 most common jobs.\n\n*Your output should look like this*\n\n```\nTransit Operator    9424\nSpecial Nurse       5791\nRegistered Nurse    4955\nCustodian           3214\nFirefighter         3153\nName: JobTitle, dtype: int64\n```"
     },
     {
-        "score": 14,
-        "testCases": [],
-        "choices": [],
-        "_id": "628b0fedebe1b1001ed1d21f",
-        "resultType": "EXPRESSION",
-        "question": "Write a single line of code to return all employees who work in one of those top 5 most common jobs.\n\nKeep only 5 columns: `Year`, `JobTitle`, `BasePay`, `OvertimePay`, and `TotalPay`.\n\n*Your output should look like this*\n\n<img src='https://drive.google.com/uc?export=view&id=19ZkleLPdJAZCA09YIReQeW7SM9ret_w5' width=1000>"
-    },
-    {
         "score": 10,
         "testCases": [],
         "choices": [],
