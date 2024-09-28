@@ -11,8 +11,6 @@ Coderschool Exam Client (cspyexamclient) is a reimplementation of the legacy sys
 
 This new system allows the operations team to take ownership of the exam content, to quickly resolve any issues as they arise. Additionally, it lays the foundation for integrating the [**auto-grading**](https://github.com/nauqh/autograde) system in future iterations, enhancing the efficiency and accuracy of the grading process.
 
-This document aims to provide a detailed explanation of Coderschool Exam Client, focusing on its design, architecture, functionality, and usage. It is intended for developers and engineers working on or maintaining the project.
-
 ## Features
 
 ### Submit - Resubmit - Reset
