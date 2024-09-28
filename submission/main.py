@@ -7,7 +7,7 @@ import requests
 
 
 class Submission:
-    def __init__(self):
+    def __init__(self, exam_id: str):
         url = 'https://raw.githubusercontent.com/nauqh/cspyexamclient/master/submission/questions.json'
         response = requests.get(url)
         self.questions = json.loads(response.content.decode('utf-8'))

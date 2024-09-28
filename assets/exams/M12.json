@@ -1,0 +1,185 @@
+[
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C"
+        ],
+        "_id": "641374c09bc67e001df90bd3",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following statements is true about a left join in SQL?**\n\n<br/>\n\nA. A left join returns all rows from both tables where the join condition is true.\n\nB. A left join returns all rows from the left table and matching rows from the right table.\n\nC. A left join returns all rows from the right table and matching rows from the left table."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C"
+        ],
+        "_id": "641374c09bc67e001df90bd4",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What happens if there is no matching row in the right table in a left join?**\n\n<br/>\n\nA. The join fails and no rows are returned.\n\nB. The join includes a null value for the columns from the right table.\n\nC. The join only returns rows from the left table."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bd5",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What does a full outer join return in SQL?**\n\n<br/>\n\nA. All rows from both tables where the join condition is true.\n\nB. All rows from the left table and matching rows from the right table.\n\nC. All rows from the right table and matching rows from the left table.\n\nD. All rows from both tables, including unmatched rows."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bd6",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What is the purpose of a self join in SQL?**\n\n<br/>\n\nA. To join a table with itself to create a new table.\n\nB. To compare rows within a table based on a certain condition.\n\nC. To filter out rows in a table based on a certain condition.\n\nD. To improve the performance of a query by reducing the number of joins."
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bd7",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What is the difference between a UNION and an INTERSECT operation in SQL?**\n\n<br/>\n\nA. A UNION operation combines the results of two or more SELECT statements, while an INTERSECT operation returns only the rows that are common to both SELECT statements.\n\nB. A UNION operation returns only the rows that are common to both SELECT statements, while an INTERSECT operation combines the results of two or more SELECT statements.\n\nC. A UNION operation returns all the rows from both SELECT statements, while an INTERSECT operation returns only the distinct rows that are common to both SELECT statements.\n\nD. A UNION operation returns only the distinct rows from both SELECT statements, while an INTERSECT operation returns all the rows that are common to both SELECT statements."
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bd8",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following statements is true about the COALESCE function in SQL?**\n\n<br/>\n\nA. It can only be used with numeric data types.\n\nB. It always returns a null value if all expressions are null.\n\nC. It only works with two expressions at a time.\n\nD. It can be used with any data type."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bd9",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**What does the ROUND(x, n) function do in SQL?**\n\n<br/>\n\nA. It rounds the number x down to the nearest integer.\n\nB. It rounds the number x up to the nearest integer.\n\nC. It rounds the number x to n number of decimal places.\n\nD. It returns the smallest integer greater than or equal to the number x."
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bda",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following statements is true about the LEFT and RIGHT functions in SQL?**\n\n<br/>\n\nA. Both functions can be used to replace a specified substring in a string.\n\nB. Both functions return the entire string if the specified length is greater than the length of the string.\n\nC. The LEFT function can only be used with numeric data types.\n\nD. The RIGHT function can only be used with character data types."
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bdb",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following statements is true about time operators in SQL?**\n\n<br/>\n\nA. The / operator can be used to multiply a time value by a numeric value.\n\nB. The * operator can be used to divide a time value by a numeric value.\n\nC. The - operator can be used to subtract a time value from a date value.\n\nD. The + operator can be used to add a date value to a time value."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bdc",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is the result of using arithmetic operators with NULL values in SQL?\n\n<br/>\n\nA. An error message is returned.\n\nB. The result is always NULL.\n\nC. The NULL value is treated as zero.\n\nD. The NULL value is treated as one."
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bdd",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following SQL statements correctly uses the LAG() function to return the previous row's value of the 'sales' column in the 'orders' table?**\n\n<br/>\n\nA. `SELECT LAG(sales) OVER (ORDER BY date) as prev_sales, sales FROM orders;`\n\nB. `SELECT LAG(sales, 1) OVER (ORDER BY date) as prev_sales, sales FROM orders;`\n\nC. `SELECT LAG(sales, 1, 0) OVER (ORDER BY date) as prev_sales, sales FROM orders;`\n\nD. `SELECT LAG(sales, -1) OVER (ORDER BY date) as prev_sales, sales FROM orders;`"
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90bde",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following SQL statements correctly uses RANK to assign a rank to each value in the 'sales' column of the 'orders' table?**\n\n<br/>\n\nA. `SELECT RANK() OVER (ORDER BY sales) as rank, sales FROM orders;`\n\nB. `SELECT RANK() OVER (ORDER BY sales DESC) as rank, sales FROM orders;`\n\nC. `SELECT RANK() OVER (PARTITION BY sales ORDER BY sales) as rank, sales FROM orders;`\n\nD. `SELECT RANK() OVER (ORDER BY sales) as sales_rank FROM orders;`"
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [],
+        "_id": "641374c09bc67e001df90bdf",
+        "resultType": "VALUE",
+        "question": "Given the following data:\n\n<br/>\n\n```\nid | student_name | score\n---|--------------|------\n 1 | Alice        |   91\n 2 | Bob          |   85\n 3 | Charlie      |   90\n 4 | David        |   85\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT id, student_name, score, RANK() OVER (ORDER BY score DESC) AS rank\nFROM scores;\n```\n\n**What is the rank of David?**"
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [],
+        "_id": "641374c09bc67e001df90be0",
+        "resultType": "VALUE",
+        "question": "Given the following data:\n\n<br/>\n\n```\nsales_date | sales_amount\n-----------|------------\n2021-01-01 | 100\n2021-01-02 | 300\n2021-01-03 | 200\n2021-01-04 | 300\n2021-01-05 | 250\n2021-01-06 | 175\n2021-01-07 | 400\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT \n    sales_date, \n    sales_amount, \n    AVG(sales_amount) OVER (ORDER BY sales_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS rolling_avg\nFROM sales_transactions;\n```\n\n**What is the `rolling_avg` on `2021-01-02`?**"
+    },
+    {
+        "score": 5,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "641374c09bc67e001df90be1",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "**Which of the following is a good practice when writing SQL queries?**\n\n<br/>\n\nA. Use * to select all columns from a table.\n\nB. Include comments in your queries to explain what they do.\n\nC. Use double quotes to enclose strings in your queries.\n\nD. Write long and complex queries to save time."
+    }
+]
