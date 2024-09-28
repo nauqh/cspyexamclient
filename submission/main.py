@@ -10,18 +10,16 @@ from enum import Enum
 class Submission:
     __slots__ = ['questions', 'answers', 'email']
 
-    class ExamID(Enum):
-        M11 = "M11"
-        M12 = "M12"
-        M21 = "M21"
-        M31 = "M31"
-
-    def __init__(self, exam_url: str, exam_id: ExamID):
+    def __init__(self, exam_id: str):
         response = requests.get(exam_url)
         self.questions = json.loads(response.content.decode('utf-8'))
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
-        self.exam_id = exam_id
+
+        response = requests.get(
+            f"https://cspyclient.up.railway.app/assignment/{exam_id}")
+        exam = response.json()
+        exam_url = exam['url']
 
     def register_student(self):
         def submit_email(btn):
