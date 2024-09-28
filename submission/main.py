@@ -7,6 +7,8 @@ import requests
 
 
 class Submission:
+    __slots__ = ['questions', 'answers', 'email']
+
     def __init__(self, exam_url: str):
         response = requests.get(exam_url)
         self.questions = json.loads(response.content.decode('utf-8'))
