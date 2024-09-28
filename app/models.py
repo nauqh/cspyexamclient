@@ -9,8 +9,8 @@ class Submission(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     email = Column(String)
-    answers = Column(JSON)
     exam_id = Column(String, ForeignKey('exams.id'))
+    answers = Column(JSON)
     submitted_at = Column(DateTime(timezone=True),
                           server_default=func.now(), nullable=False)
 
