@@ -1,0 +1,190 @@
+[
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d211",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is the shape of the dataframe?\n\nA. 2 Dimensions\n\nB. (148654,)\n\nC. (10, 148654)\n\nD. (148654, 10)"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d212",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Assume that every employee has a different name, how many employees are there in the dataset?\n\nA. 110811\n\nB. 148654\n\nC. 110810\n\nD. 148652"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d213",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is the average Base Pay of the whole dataset? \n\nA. 66325.45\n\nB. 65007.45\n\nC. 5066.05\n\nD. 74768.32"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d214",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Which of the observations is FALSE about the San Francisco employees?\n\nA. The size of the city government slightly grew from 2011 to 2014 (in term of number of employees)\n\nB. However, average of total pay increased steadily throughout the years thanks to better payment policy. \n\nC. The average amount of overtime pay also increased.\n\nD. Maximum amount of Base Pay reached about 319.000 USD in 2014."
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d215",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is the name of the highest paid person (including benefits)?\n\nA. WILLIAM J. COAKER JR.\n\nB. NATHANIEL FORD\n\nC. JOE LOPEZ\n\nD. GREGORY P SUHR"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d216",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is his job title?\n\nA. General Manager-Metropolitan Transit Authority\n\nB. Special Nurse\n\nC. Chief of Police\n\nD. Chief Investment Officer"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d217",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What is the name of the lowest paid person (including benefits)?\n\nA. WILLIAM J. COAKER JR.\n\nB. NATHANIEL FORD\n\nC. JOE LOPEZ\n\nD. LILLER JACKSON"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d218",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "How much did the person in Question 7 get paid (TotalPay) in 2014? \n\nA. -618.13\n\nB. 618.13\n\nC. -257.56\n\nD. 257.56"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d219",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "How many unique employees have the same Job Title with `Liller Jackson` in the dataset? \n\nA. 72\n\nB. 73\n\nC. 74\n\nD. 75"
+    },
+    {
+        "score": 14,
+        "testCases": [],
+        "choices": [],
+        "_id": "628b0fedebe1b1001ed1d21a",
+        "resultType": "EXPRESSION",
+        "question": "Write a single line of code to return all employees whose TotalPay are higher than the average TotalPay. \n\n*Your output should look like this*\n\n<img src='https://i.imgur.com/5u2IcMS.png' width=1000>"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d21b",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Among employees who have TotalPay higher than the average TotalPay, how many unique Job Titles do they hold?\n\nA. 1305\n\nB. 1306\n\nC. 1307\n\nD. 1308"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d21c",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "How many Job Titles were represented by only one person in 2013?\n\nA. 202\n\nB. 203\n\nC. 204\n\nD. 205"
+    },
+    {
+        "score": 4,
+        "testCases": [],
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d21d",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "How many percentage of Special Nurse get paid overtime? \n\nA. About 76%\n\nB. About 56%\n\nC. About 26%\n\nD. About 6%"
+    },
+    {
+        "score": 14,
+        "testCases": [],
+        "choices": [],
+        "_id": "628b0fedebe1b1001ed1d21e",
+        "resultType": "EXPRESSION",
+        "question": "Write a single line of code to return top 5 most common jobs.\n\n*Your output should look like this*\n\n```\nTransit Operator    9424\nSpecial Nurse       5791\nRegistered Nurse    4955\nCustodian           3214\nFirefighter         3153\nName: JobTitle, dtype: int64\n```"
+    },
+    {
+        "score": 14,
+        "testCases": [],
+        "choices": [],
+        "_id": "628b0fedebe1b1001ed1d21f",
+        "resultType": "EXPRESSION",
+        "question": "Write a single line of code to return all employees who work in one of those top 5 most common jobs.\n\nKeep only 5 columns: `Year`, `JobTitle`, `BasePay`, `OvertimePay`, and `TotalPay`.\n\n*Your output should look like this*\n\n<img src='https://drive.google.com/uc?export=view&id=19ZkleLPdJAZCA09YIReQeW7SM9ret_w5' width=1000>"
+    },
+    {
+        "score": 10,
+        "testCases": [],
+        "choices": [],
+        "_id": "628b0fedebe1b1001ed1d220",
+        "resultType": "EXPRESSION",
+        "question": "Among those 5 most common Job Titles of the whole dataset, how have the avarage Base Pay, Overtime Pay, and Total Pay changed over 4 years of the dataset? \n\n*Use Pandas to compute a summary table like this.*\n\n<img src='https://i.imgur.com/YUANVVF.png' width=1000>"
+    }
+]
