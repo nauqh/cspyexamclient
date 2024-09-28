@@ -17,7 +17,7 @@ Expected output
 | Module       | Description       | Link                                                                                  |
 |--------------|-------------------|---------------------------------------------------------------------------------------|
 | M1.1         | Basic SQL         | https://colab.research.google.com/drive/1E3sppN-vjschXS46WTeqZnQSmRBcuggN?usp=sharing |
-| M1.2         | Advanced SQL      | Link                                                                                  |
+| M1.2         | Advanced SQL      | https://colab.research.google.com/drive/1i-aGTjpXL-En8kVFB0Cl8elHn9Z866yv?usp=sharing |
 | M2.1         | Python 101        | Link                                                                                  |
 | M3.1         | Pandas 101        | Link                                                                                  |
 | M4.1         | Data Visualization| Link                                                                                  |
