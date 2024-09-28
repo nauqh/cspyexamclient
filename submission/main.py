@@ -17,8 +17,8 @@ class Submission:
         def submit_email(btn):
             with output:
                 clear_output()
-                if (len(email_field.value) == 0):
-                    print("Please enter your email")
+                if (len(email_field.value) == 0) or ('@' not in email_field.value):
+                    print("Please enter a valid email")
                     return
                 self.email = email_field.value.strip().lower()
 
