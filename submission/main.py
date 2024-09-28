@@ -11,14 +11,15 @@ class Submission:
     __slots__ = ['questions', 'answers', 'email']
 
     def __init__(self, exam_id: str):
-        self.questions = json.loads(response.content.decode('utf-8'))
-        self.answers = [{'question': q['question'], 'answer': ''}
-                        for q in self.questions]
-
         response = requests.get(
             f"https://cspyclient.up.railway.app/assignment/{exam_id}")
         exam = response.json()
         exam_url = exam['url']
+
+        response = requests.get(exam_url)
+        self.questions = json.loads(response.content.decode('utf-8'))
+        self.answers = [{'question': q['question'], 'answer': ''}
+                        for q in self.questions]
 
     def register_student(self):
         def submit_email(btn):
