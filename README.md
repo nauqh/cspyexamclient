@@ -7,6 +7,10 @@
 Update (28 Sep 2024): Complete exam notebook for M2.1
 
 ## About the project
+The Coderschool Exam Client (cspyexamclient) is a reimplementation of the legacy system, `cspyclient`, with a focus on managing and processing learner submissions for Data Science exams. Beyond replicating key features from the original system, this version addresses long-standing bugs caused by outdated content and insufficient maintenance.
+
+This new system allows the operations team to take ownership of the exam content, to quickly resolve any issues as they arise. Additionally, it lays the foundation for integrating the `auto-grading system` in future iterations, enhancing the efficiency and accuracy of the grading process.
+
 This document (will) provide a detailed explanation of Coderschool Exam Client, focusing on its design, architecture, functionality, and usage. It is intended for developers and engineers working on or maintaining the project.
 
 ## Features
