@@ -12,7 +12,7 @@ class Submission:
 
     def __init__(self, exam_id: str):
         response = requests.get(
-            f"https://cspyclient.up.railway.app/assignment/{exam_id}")
+            f"https://cspyclient.up.railway.app/exam/{exam_id}")
         exam = response.json()
         exam_url = exam['url']
 
