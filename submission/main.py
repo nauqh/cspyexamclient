@@ -182,11 +182,11 @@ class Submission:
                 # Upload submission to server
                 payload = {
                     "email": self.email,
-                    "exam_id": self.exam['id'],
-                    "answers": self.answers
+                    "answers": self.answers,
+                    "exam_id": self.exam['id']
                 }
                 response = requests.post(
-                    "https://cspyclient.up.railway.app/exam", json=payload)
+                    "https://cspyclient.up.railway.app/submission", json=payload)
                 if response.status_code == 200:
                     print("\n\tAll answers submitted successfully!")
                 else:
