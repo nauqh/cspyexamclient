@@ -61,7 +61,7 @@
         ],
         "_id": "63ea821febdc63001dd301d1",
         "resultType": "MULTICHOICE_SINGLE",
-        "question": "About the schema below, which answer is **WRONG**?\n\n![](https://i.imgur.com/sN9LD75.png)\n\nA. A invoice must belong to a specific customer\n\nB. A customer must have at least 1 invoice\n\nC. In the Invoices Table, CustomerID is the Foreign Key\n\nD. In the Customers Table, CustomerID is the Primary Key"
+        "question": "About the schema below, which answer is **WRONG**?\n\n<img width='500' src='https://i.imgur.com/sN9LD75.png'>\n\nA. A invoice must belong to a specific customer\n\nB. A customer must have at least 1 invoice\n\nC. In the Invoices Table, CustomerID is the Foreign Key\n\nD. In the Customers Table, CustomerID is the Primary Key"
     },
     {
         "score": 3,
