@@ -7,8 +7,6 @@ import requests
 
 
 class Submission:
-    __slots__ = ['questions', 'answers', 'email', 'exam_id']
-
     def __init__(self, exam_id: str):
         response = requests.get(
             f"https://cspyclient.up.railway.app/exam/{exam_id}")
