@@ -4,22 +4,25 @@
 ![Python](https://img.shields.io/badge/Python-%230096c7.svg?&style=for-the-badge&logo=python&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 
-Update (28 Sep 2024): Complete exam notebook for M3.1
+Update (29 Sep 2024): Publish package to PyPi
 
 ## About the project
-Coderschool Exam Client (cspyexamclient) is a reimplementation of the legacy system, `cspyclient`, with a focus on managing and processing learner submissions for Data Science exams. Beyond replicating key features from the original system, this version addresses long-standing bugs caused by outdated content and insufficient maintenance.
-
-This new system allows the operations team to take ownership of the exam content, to quickly resolve any issues as they arise. Additionally, it lays the foundation for integrating the [**auto-grading**](https://github.com/nauqh/autograde) system in future iterations, enhancing the efficiency and accuracy of the grading process.
+**cspyexamclient** is a Python client for interacting with online exam system. It allows students to register, answer questions, and submit their answers. The client uses `ipywidgets` for creating interactive widgets in ipython notebooks before uploading students answers to the exam server.
 
 ## Features
 
+- **Register Student**: Allows students to register using their email.
+- **Generate Questions**: Dynamically displays questions and answer options.
+- **Display Submission Summary**: Displays a summary of all questions and corresponding answers.
+- **Submit Answers**: Submits student answers to the server.
+
 ### Submit - Resubmit - Reset
 
-<img width="500" src="https://github.com/nauqh/cspyexamclient/blob/master/assets/test_submission.gif">
+<img width="500" src="assets/test_submission.gif">
 
 ### Exam Summary
 
-<img width="500" src="https://github.com/nauqh/cspyexamclient/blob/master/assets/exam_summary.png">
+<img width="500" src="assets/exam_summary.png">
 
 ## Exam notebook
 | Module       | Description       | Link                                                                                  |
