@@ -15,11 +15,11 @@ This new system allows the operations team to take ownership of the exam content
 
 ### Submit - Resubmit - Reset
 
-<img width="500" src="assets/test_submission.gif">
+<img width="500" src="https://github.com/nauqh/cspyexamclient/blob/master/assets/test_submission.gif">
 
 ### Exam Summary
 
-<img width="500" src="assets/exam_summary.png">
+<img width="500" src="https://github.com/nauqh/cspyexamclient/blob/master/assets/exam_summary.png">
 
 ## Exam notebook
 | Module       | Description       | Link                                                                                  |
