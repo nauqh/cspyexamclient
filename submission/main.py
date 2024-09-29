@@ -179,9 +179,6 @@ class Submission:
                 #             f"Please answer question {idx + 1} before submitting.")
                 #         return
 
-                # Submission logic placeholder
-                print("\n\tAll answers submitted successfully!")
-
                 # Upload submission to server
                 payload = {
                     "email": self.email,
@@ -189,7 +186,7 @@ class Submission:
                     "answers": self.answers
                 }
                 response = requests.post(
-                    "https://cspyclient.up.railway.app", json=payload)
+                    "https://cspyclient.up.railway.app/exam", json=payload)
                 if response.status_code == 200:
                     print("\n\tAll answers submitted successfully!")
                 else:
