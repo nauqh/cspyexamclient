@@ -4,7 +4,6 @@ import types
 import inspect
 import json
 import requests
-from enum import Enum
 
 
 class Submission:
@@ -13,14 +12,14 @@ class Submission:
     def __init__(self, exam_id: str):
         response = requests.get(
             f"https://cspyclient.up.railway.app/exam/{exam_id}")
-        exam = response.json()
-        exam_url = exam['url']
-        self.exam_id = exam_id
+        self.exam = response.json()
+        # exam_url = exam['url']
+        # self.exam_id = exam_id
 
-        response = requests.get(exam_url)
-        self.questions = json.loads(response.content.decode('utf-8'))
-        self.answers = [{'question': q['question'], 'answer': ''}
-                        for q in self.questions]
+        # response = requests.get(exam_url)
+        # self.questions = json.loads(response.content.decode('utf-8'))
+        # self.answers = [{'question': q['question'], 'answer': ''}
+        #                 for q in self.questions]
 
     def register_student(self):
         def submit_email(btn):
