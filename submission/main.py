@@ -8,13 +8,14 @@ from enum import Enum
 
 
 class Submission:
-    __slots__ = ['questions', 'answers', 'email']
+    __slots__ = ['questions', 'answers', 'email', 'exam_id']
 
     def __init__(self, exam_id: str):
         response = requests.get(
             f"https://cspyclient.up.railway.app/exam/{exam_id}")
         exam = response.json()
         exam_url = exam['url']
+        self.exam_id = exam_id
 
         response = requests.get(exam_url)
         self.questions = json.loads(response.content.decode('utf-8'))
@@ -184,20 +185,21 @@ class Submission:
                 #         return
 
                 # Submission logic placeholder
-                print("\nAll answers submitted successfully!")
-                exam_id = "your_exam_id_here"
+                print("\n\tAll answers submitted successfully!")
+
+                # Upload submission to server
                 payload = {
                     "email": self.email,
-                    "exam_id": exam_id,
+                    "exam_id": self.exam_id,
                     "answers": self.answers
                 }
                 response = requests.post(
                     "https://cspyclient.up.railway.app", json=payload)
                 if response.status_code == 200:
-                    print("Submission successful!")
+                    print("\n\tAll answers submitted successfully!")
                 else:
                     print(
-                        f"Submission failed with status code {response.status_code}")
+                        f"\n\tSubmission failed with status code {response.status_code}")
                 btn.description = "Submit All"
                 btn.disabled = False
 
