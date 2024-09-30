@@ -1,3 +1,6 @@
 .env
 env/*
 *.pyc
+dist/*
+build/*
+cspyexamclient.egg-info/*

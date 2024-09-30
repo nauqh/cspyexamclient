@@ -115,7 +115,7 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301d7",
         "resultType": "SQL",
-        "question": "**Retrieve the names and total sales of the top 5 selling products.**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/Qai3Crt.png)"
+        "question": "**Retrieve the names and total sales of the top 5 selling products.**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/Qai3Crt.png'>"
     },
     {
         "score": 8,

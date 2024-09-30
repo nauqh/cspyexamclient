@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='cspyexamclient',
-    version='0.0.7',
+    version='0.0.8',
     description='An internal tool for exam submission',
     author='Obiwan',
     author_email='quan.do@coderschool.vn',
