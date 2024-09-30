@@ -188,7 +188,7 @@ class Submission:
                 response = requests.post(
                     "https://cspyclient.up.railway.app/submission", json=payload)
                 if response.status_code == 201:
-                    print("\n\tAll answers submitted successfully!")
+                    print("\nAll answers submitted successfully!")
                 else:
                     print(
                         f"\nSubmission failed with status code {response.status_code}")
