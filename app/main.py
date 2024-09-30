@@ -41,7 +41,7 @@ async def add_submission(data: Submission, db: Session = Depends(get_db)):
 @app.get("/submission/{email}", response_model=SubmissionResponse)
 async def get_assignment(email: str, db: Session = Depends(get_db)):
     assignment = db.query(models.Submission).filter(
-        models.Submission.email == email).first()
+        models.Submission.email == email).order_by(models.Submission.submitted_at.desc()).first()
     return assignment
 
 
