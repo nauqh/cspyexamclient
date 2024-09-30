@@ -191,13 +191,13 @@ class Submission:
                     print("\n\tAll answers submitted successfully!")
                 else:
                     print(
-                        f"\n\tSubmission failed with status code {response.status_code}")
+                        f"\nSubmission failed with status code {response.status_code}")
                 btn.description = "Submit All"
                 btn.disabled = False
 
         # Create HTML table with questions and answers, fixed column widths
         table_html = """
-        <table style="width:80%; margin: 0 auto;; border-collapse: collapse;" border="1">
+        <table style="width:80%; border-collapse: collapse;" border="1">
             <tr>
                 <th style="padding: 8px; text-align: left; width: 20%;">Question</th>
                 <th style="padding: 8px; text-align: left; width: 80%;">Your Answer</th>
