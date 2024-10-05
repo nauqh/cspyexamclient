@@ -117,12 +117,17 @@
         "question": "How many unique employees have the same Job Title with `Liller Jackson` in the dataset? \n\nA. 72\n\nB. 73\n\nC. 74\n\nD. 75"
     },
     {
-        "score": 14,
+        "score": 4,
         "testCases": [],
-        "choices": [],
-        "_id": "628b0fedebe1b1001ed1d21a",
-        "resultType": "EXPRESSION",
-        "question": "Write a single line of code to return all employees whose TotalPay are higher than the average TotalPay. \n\n*Your output should look like this*\n\n<img src='https://i.imgur.com/5u2IcMS.png' width=1000>"
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "_id": "628b0fedebe1b1001ed1d21d",
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "How many percentage of Special Nurse get paid overtime? \n\nA. About 76%\n\nB. About 56%\n\nC. About 26%\n\nD. About 6%"
     },
     {
         "score": 4,
@@ -151,17 +156,12 @@
         "question": "How many Job Titles were represented by only one person in 2013?\n\nA. 202\n\nB. 203\n\nC. 204\n\nD. 205"
     },
     {
-        "score": 4,
+        "score": 14,
         "testCases": [],
-        "choices": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "_id": "628b0fedebe1b1001ed1d21d",
-        "resultType": "MULTICHOICE_SINGLE",
-        "question": "How many percentage of Special Nurse get paid overtime? \n\nA. About 76%\n\nB. About 56%\n\nC. About 26%\n\nD. About 6%"
+        "choices": [],
+        "_id": "628b0fedebe1b1001ed1d21a",
+        "resultType": "EXPRESSION",
+        "question": "Write a single line of code to return all employees whose TotalPay are higher than the average TotalPay. \n\n*Your output should look like this*\n\n<img src='https://i.imgur.com/5u2IcMS.png' width=1000>"
     },
     {
         "score": 14,
