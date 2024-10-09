@@ -9,7 +9,7 @@ import requests
 class Submission:
     def __init__(self, exam_id: str):
         response = requests.get(
-            f"https://cspyclient.up.railway.app/exam/{exam_id}")
+            f"https://cspyexamclient.up.railway.app/exam/{exam_id}")
         self.exam = response.json()
 
         response = requests.get(self.exam['url'])
@@ -186,7 +186,7 @@ class Submission:
                     "exam_id": self.exam['id']
                 }
                 response = requests.post(
-                    "https://cspyclient.up.railway.app/submission", json=payload)
+                    "https://cspyexamclient.up.railway.app/submission", json=payload)
                 if response.status_code == 201:
                     print("\nAll answers submitted successfully!")
                 else:
