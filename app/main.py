@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, status
+from fastapi import FastAPI, Depends, status, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from .schemas import Exam, Submission, SubmissionResponse
@@ -38,10 +38,29 @@ async def add_submission(data: Submission, db: Session = Depends(get_db)):
     return f"Added submission for {submission.email}"
 
 
-@app.get("/submission/{email}", response_model=SubmissionResponse)
-async def get_assignment(email: str, db: Session = Depends(get_db)):
+@app.get("/submission", response_model=SubmissionResponse)
+async def get_assignment(email: str, exam: str, db: Session = Depends(get_db)):
+    email_exists = db.query(models.Submission).filter(
+        models.Submission.email == email).first()
+    if not email_exists:
+        raise HTTPException(
+            status_code=404, detail=f"Email {email} not found")
+
+    exam_exists = db.query(models.Exam).filter(
+        models.Exam.id == exam).first()
+    if not exam_exists:
+        raise HTTPException(
+            status_code=404, detail=f"Exam {exam} not found")
+
     assignment = db.query(models.Submission).filter(
-        models.Submission.email == email).order_by(models.Submission.submitted_at.desc()).first()
+        models.Submission.email == email,
+        models.Submission.exam_id == exam
+    ).order_by(models.Submission.submitted_at.desc()).first()
+
+    if assignment is None:
+        raise HTTPException(
+            status_code=404, detail="No submission found for the provided email and exam.")
+
     return assignment
 
 
