@@ -188,7 +188,7 @@ class Submission:
                 response = requests.post(
                     "https://cspyexamclient.up.railway.app/submission", json=payload)
                 if response.status_code == 201:
-                    print("\nAll answers submitted successfully!")
+                    print("\nAll answers saved successfully!")
                 else:
                     print(
                         f"\nSubmission failed with status code {response.status_code}")
@@ -219,9 +219,9 @@ class Submission:
         display(widgets.HTML(table_html))
 
         btn_submit_all = widgets.Button(
-            description="Submit All",
+            description="Save Submission",
             button_style='success',
-            tooltip='Submit All',
+            tooltip='Save All',
             layout=widgets.Layout(width='50%')
         )
 
