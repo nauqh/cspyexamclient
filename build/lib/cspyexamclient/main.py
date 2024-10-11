@@ -192,7 +192,7 @@ class Submission:
                 else:
                     print(
                         f"\nSubmission failed with status code {response.status_code}")
-                btn.description = "Submit All"
+                btn.description = "Save All"
                 btn.disabled = False
 
         # Create HTML table with questions and answers, fixed column widths
