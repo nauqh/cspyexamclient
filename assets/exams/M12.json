@@ -159,7 +159,7 @@
         "choices": [],
         "_id": "641374c09bc67e001df90bdf",
         "resultType": "VALUE",
-        "question": "Given the following data:\n\n<br/>\n\n```\nid | student_name | score\n---|--------------|------\n 1 | Alice        |   91\n 2 | Bob          |   85\n 3 | Charlie      |   90\n 4 | David        |   85\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT id, student_name, score, RANK() OVER (ORDER BY score DESC) AS rank\nFROM scores;\n```\n\n**What is the rank of David?**"
+        "question": "Given the following data:\n\n<br/>\n\n```\nid | student_name | score\n---|--------------|------\n 1 | Alice        |   91\n 2 | Bob          |   85\n 3 | Charlie      |   90\n 4 | David        |   85\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT id, student_name, score, RANK() OVER (ORDER BY score DESC) AS rank\nFROM scores;\n```\n\n**What is the rank of David? Write a SINGLE number to answer the question**"
     },
     {
         "score": 10,
@@ -167,7 +167,7 @@
         "choices": [],
         "_id": "641374c09bc67e001df90be0",
         "resultType": "VALUE",
-        "question": "Given the following data:\n\n<br/>\n\n```\nsales_date | sales_amount\n-----------|------------\n2021-01-01 | 100\n2021-01-02 | 300\n2021-01-03 | 200\n2021-01-04 | 300\n2021-01-05 | 250\n2021-01-06 | 175\n2021-01-07 | 400\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT \n    sales_date, \n    sales_amount, \n    AVG(sales_amount) OVER (ORDER BY sales_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS rolling_avg\nFROM sales_transactions;\n```\n\n**What is the `rolling_avg` on `2021-01-02`?**"
+        "question": "Given the following data:\n\n<br/>\n\n```\nsales_date | sales_amount\n-----------|------------\n2021-01-01 | 100\n2021-01-02 | 300\n2021-01-03 | 200\n2021-01-04 | 300\n2021-01-05 | 250\n2021-01-06 | 175\n2021-01-07 | 400\n```\n\n<br/>\n\nAnd the following query:\n\n```sql\nSELECT \n    sales_date, \n    sales_amount, \n    AVG(sales_amount) OVER (ORDER BY sales_date ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS rolling_avg\nFROM sales_transactions;\n```\n\n**What is the `rolling_avg` on `2021-01-02`? Write a SINGLE number to answer the question**"
     },
     {
         "score": 5,
