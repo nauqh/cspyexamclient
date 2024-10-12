@@ -122,7 +122,7 @@
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301d8",
-        "question": "**Which employees have sold the most products?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/GIsp3P4.png)",
+        "question": "**Which employees have sold the most products?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/PTXgopi.png)",
         "resultType": "SQL"
     },
     {
