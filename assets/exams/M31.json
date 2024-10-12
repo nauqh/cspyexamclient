@@ -161,7 +161,7 @@
         "choices": [],
         "_id": "628b0fedebe1b1001ed1d21a",
         "resultType": "EXPRESSION",
-        "question": "Write a single line of code to return all employees whose TotalPay are higher than the average TotalPay. \n\n*Your output should look like this*\n\n<img src='https://i.imgur.com/5u2IcMS.png' width=1000>"
+        "question": "Write a single line of code to return **all information** of employees whose TotalPay are higher than the average TotalPay. \n\n*Your output should look like this*\n\n<img src='https://i.imgur.com/5u2IcMS.png' width=1000>"
     },
     {
         "score": 14,

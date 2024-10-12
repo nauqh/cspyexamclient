@@ -222,7 +222,7 @@ class Submission:
             description="Save Submission",
             button_style='success',
             tooltip='Save All',
-            layout=widgets.Layout(width='50%')
+            layout=widgets.Layout(width='30%')
         )
 
         button_box = widgets.HBox([btn_submit_all], layout=widgets.Layout(
