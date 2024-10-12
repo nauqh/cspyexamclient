@@ -226,7 +226,7 @@ class Submission:
         )
 
         button_box = widgets.HBox([btn_submit_all], layout=widgets.Layout(
-            justify_content='center',
+            justify_content='left',
         ))
         btn_submit_all.on_click(submit_all)
 

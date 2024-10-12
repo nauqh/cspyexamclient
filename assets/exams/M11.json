@@ -115,14 +115,14 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301d7",
         "resultType": "SQL",
-        "question": "**Retrieve the names and total sales of the top 5 selling products.**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/Qai3Crt.png'>"
+        "question": "**Retrieve the names and total revenue of the top 5 selling products.**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/Qai3Crt.png'>"
     },
     {
         "score": 8,
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301d8",
-        "question": "**Which employees have sold the most **products**?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/GIsp3P4.png)",
+        "question": "**Which employees have sold the most products?**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/GIsp3P4.png)",
         "resultType": "SQL"
     },
     {
