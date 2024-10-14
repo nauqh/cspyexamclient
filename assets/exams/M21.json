@@ -38,7 +38,7 @@
         ],
         "_id": "6245680ebea402001fa6c76b",
         "resultType": "MULTICHOICE_MANY",
-        "question": "Given the following code:\n```\na = \"Hello World Philippines!\"\n```\n\nWhich of the following are empty strings?\n\n```\nb = a[:3]\nc = a[:-1:-1]\nd = a[0:-1:2]\ne = a[1:-2:-1]\nf = a[-1:0:-1]\ng = a[-3:-1]\n```\n\n**Choose atmost 2 correct choices**. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac)."
+        "question": "Given the following code:\n```\na = \"Hello World Philippines!\"\n```\n\nWhich of the following are empty strings?\n\n```\nb = a[:3]\nc = a[:-1:-1]\nd = a[0:-1:2]\ne = a[1:-2:-1]\nf = a[-1:0:-1]\ng = a[-3:-1]\n```\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac)."
     },
     {
         "score": 4,
@@ -78,7 +78,7 @@
         ],
         "_id": "6245680ebea402001fa6c76e",
         "resultType": "MULTICHOICE_MANY",
-        "question": "Given the following code:\n```\ns = ' _-_CoderSchool Data Science 2022 _ _'\n```\n\nWhich of the following expressions correctly returns the string \"CoderSchool Data Science 2022\"?\n\n**Choose atmost 2 correct choices**. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nA. `s.strip('-_ ')`\n\nB. `s.replace('_','').replace('-','').replace(' ','')`\n\nC. `s.replace('_','').replace('-','').strip()`\n\nD. `s.remove('_').remove('-').remove(' ')`"
+        "question": "Given the following code:\n```\ns = ' _-_CoderSchool Data Science 2022 _ _'\n```\n\nWhich of the following expressions correctly returns the string \"CoderSchool Data Science 2022\"?\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nA. `s.strip('-_ ')`\n\nB. `s.replace('_','').replace('-','').replace(' ','')`\n\nC. `s.replace('_','').replace('-','').strip()`\n\nD. `s.remove('_').remove('-').remove(' ')`"
     },
     {
         "score": 4,
@@ -91,7 +91,7 @@
         ],
         "_id": "6245680ebea402001fa6c76f",
         "resultType": "MULTICHOICE_MANY",
-        "question": "Which of the following function definitions is VALID (i.e. run without error)?\n\n**Choose atmost 2 correct choices**. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nNote: this question is not asking if the function works as intended, only if the function definition runs without error.\n\nA.\n```\ndef keys_and_values(new_key, new_val, k=[], v=[]):\nk.append(new_key)\nv.append(new_val)\nreturn k,v\n```\n\nB.\n```\ndef first_ten_fibonacci:\n    fibo_list = [1,1]\n    for i in range(8):\n        next_fibo = fibo_list[i] + fibo_list[i+1]\n        fibo_list.append(next_fibo)\n    return fibo_list\n```\n\nC.\n```\ndef mult_3_plus_1(x):\n    y = 3*x\n    z = y+1\n    return z\n```\n\nD.\n```\ndef sum_of_first_n_numbers():\n    n = int(input())\n    my_sum, i = 0, 1\n    while i <= n:\n        my_sum += i\n    print(f'Sum of first {n} numbers:', my_sum)\n```"
+        "question": "Which of the following function definitions is VALID (i.e. run without error)?\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nNote: this question is not asking if the function works as intended, only if the function definition runs without error.\n\nA.\n```\ndef keys_and_values(new_key, new_val, k=[], v=[]):\nk.append(new_key)\nv.append(new_val)\nreturn k,v\n```\n\nB.\n```\ndef first_ten_fibonacci:\n    fibo_list = [1,1]\n    for i in range(8):\n        next_fibo = fibo_list[i] + fibo_list[i+1]\n        fibo_list.append(next_fibo)\n    return fibo_list\n```\n\nC.\n```\ndef mult_3_plus_1(x):\n    y = 3*x\n    z = y+1\n    return z\n```\n\nD.\n```\ndef sum_of_first_n_numbers():\n    n = int(input())\n    my_sum, i = 0, 1\n    while i <= n:\n        my_sum += i\n    print(f'Sum of first {n} numbers:', my_sum)\n```"
     },
     {
         "score": 4,
