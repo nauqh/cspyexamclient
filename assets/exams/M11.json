@@ -82,7 +82,7 @@
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301d3",
-        "question": "**What are the names and unit prices of the five most expensive products? Order these products from most expensive to least expensive**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/x3jCGYQ.png)",
+        "question": "**What are the names and unit prices of the five most expensive products?\nOrder these products from most expensive to least expensive**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/x3jCGYQ.png)",
         "resultType": "SQL"
     },
     {
@@ -91,14 +91,14 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301d4",
         "resultType": "SQL",
-        "question": "**Get the list of five countries with the most number of customers staying there. Order these countries from most customers to least customers**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/RHSnPK7.png)"
+        "question": "**Get the list of five countries with the most number of customers staying there.\nOrder these countries from most customers to least customers**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/RHSnPK7.png)"
     },
     {
         "score": 3,
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301d5",
-        "question": "**Get the list of five countries with the least number of suppliers staying there. Order the result by number of suppliers**\n\n<br />\n\n_Expected output_:\n\n![](https://i.imgur.com/Z3nScfY.png)",
+        "question": "**Get the list of five countries with the least number of suppliers staying there.\nOrder the result by number of suppliers**\n\n<br />\n\n_Expected output_:\n\n![](https://i.imgur.com/Z3nScfY.png)",
         "resultType": "SQL"
     },
     {
@@ -107,7 +107,7 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301d6",
         "resultType": "SQL",
-        "question": "**Retrieve the list of category names with number of products in each category. Order the result by number of product descending**.\n\n<br />\n\n_Expected output_:\n\n![](https://i.imgur.com/r3UZdT7.png)"
+        "question": "**Retrieve the list of category names with number of products in each category.\nOrder the result by number of product descending**.\n\n<br />\n\n_Expected output_:\n\n![](https://i.imgur.com/r3UZdT7.png)"
     },
     {
         "score": 8,
@@ -115,14 +115,14 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301d7",
         "resultType": "SQL",
-        "question": "**Retrieve the names and total revenue of the top 5 selling products. Order the result by total revenue descending**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/Qai3Crt.png'>"
+        "question": "**Retrieve the names and total revenue of the top 5 selling products.\nOrder the result by total revenue descending**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/Qai3Crt.png'>"
     },
     {
         "score": 8,
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301d8",
-        "question": "**Which employees have sold the most products? Order the result by number of products descending**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/PTXgopi.png'>",
+        "question": "**Which employees have sold the most products?\nOrder the result by number of products descending**\n\n<br/>\n\n_Expected output_:\n\n<img width='800' src='https://i.imgur.com/PTXgopi.png'>",
         "resultType": "SQL"
     },
     {
@@ -154,7 +154,7 @@
         "testCases": [],
         "choices": [],
         "_id": "63ea821febdc63001dd301dc",
-        "question": "**What are the company names of the suppliers that supply only one product?**\n\n<br/>\n\n_Expected output_:\n\n <img width='800' src='https://i.imgur.com/MZWp50w.png'>",
+        "question": "**What are the company names of the suppliers that supply only one product?**\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
         "resultType": "SQL"
     },
     {
@@ -163,7 +163,7 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301dd",
         "resultType": "SQL",
-        "question": "**What are the names of employees who have taken orders from customers who live in the same city as the employee? Order the result by \"EmployeeID\")**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/yohxKjS.png)"
+        "question": "**What are the names of employees who have taken orders from customers who live in the same city as the employee?\n Order the result by \"EmployeeID\"**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/yohxKjS.png)"
     },
     {
         "score": 6,
@@ -171,7 +171,7 @@
         "choices": [],
         "_id": "63ea821febdc63001dd301de",
         "resultType": "SQL",
-        "question": "**List the top 5 products based on total quantity ordered. Order the result by total quantity descending**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/xA2yU1e.png)"
+        "question": "**List the top 5 products based on total quantity ordered.\nOrder the result by total quantity descending**\n\n<br/>\n\n_Expected output_:\n\n![](https://i.imgur.com/xA2yU1e.png)"
     },
     {
         "score": 6,
