@@ -122,7 +122,7 @@
         "resultType": "SQL"
     },
     {
-        "question": "**Retrieve the total number of tracks in each playlist.**\n\n Order by number of tracks in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/xFAfJXy.png'>",
+        "question": "**Retrieve the total number of tracks in each playlist.**\n\n Order by number of tracks in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/BNNYZrz.png'>",
         "resultType": "SQL"
     },
     {
