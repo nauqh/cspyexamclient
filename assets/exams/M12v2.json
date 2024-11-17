@@ -118,11 +118,11 @@
         "question": "**Which of the following statements is true about the LEFT and RIGHT functions in SQL?**\n\n<br/>\n\nA. Both functions can be used to replace a specified substring in a string.\n\nB. Both functions return the entire string if the specified length is greater than the length of the string.\n\nC. The LEFT function can only be used with numeric data types.\n\nD. The RIGHT function can only be used with character data types."
     },
     {
-        "question": "**List all tracks along with their album from The Rolling Stones.**\n\n Order by albumn titles and track names\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/xFAfJXy.png'>\n\n*There must be 41 rows in the output*",
+        "question": "**List all tracks along with their album from The Rolling Stones.**\n\n Order by albumn titles and track names.\n\n<br/>\n\n_Expected output_: There must be 41 rows in the output.\n\n <img width='700' src='https://i.imgur.com/xFAfJXy.png'>\n\n",
         "resultType": "SQL"
     },
     {
-        "question": "**Retrieve the total number of tracks in each playlist.**\n\n Order by number of tracks in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
+        "question": "**Retrieve the total number of tracks in each playlist.**\n\n Order by number of tracks in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/xFAfJXy.png'>",
         "resultType": "SQL"
     },
     {
