@@ -130,7 +130,7 @@
         "resultType": "SQL"
     },
     {
-        "question": "**Find the managers (employees who manage other employees) in the store.*\n\n Display their fullname and order alphabetically.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
+        "question": "**Find the managers (employees who manage other employees) in the store.**\n\n Display their fullname and order alphabetically.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
         "resultType": "SQL"
     }
 ]
