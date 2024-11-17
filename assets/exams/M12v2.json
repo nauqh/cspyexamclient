@@ -1,0 +1,14 @@
+[
+    {
+        "question": "**List all tracks along with their album titles and artist names.**\n\n Order by artist name and track name.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
+        "resultType": "SQL"
+    },
+    {
+        "question": "**Retrieve the total number of tracks in each playlist.**\n\n Order by the total number of tracks in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
+        "resultType": "SQL"
+    },
+    {
+        "question": "**Find the total sales amount for each customer.**\n\n Order by the total sales in descending order.\n\n<br/>\n\n_Expected output_:\n\n <img width='700' src='https://i.imgur.com/UHvFhzG.png'>",
+        "resultType": "SQL"
+    }
+]
