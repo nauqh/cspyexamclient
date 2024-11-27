@@ -136,5 +136,9 @@
     {
         "question": "**Calculate the cumulative sales for each customer.** E.g. If a customer has three invoices with totals of 50, 30, and 20, the cumulative sales after the 3rd invoice would be: 50 + 30 + 20 = 100\n\n Display their fullname and order by customer id and invoice date.<br/> \n\n_Expected output_:\n\n <img width='600' src='https://i.imgur.com/stM7l95.png'>",
         "resultType": "SQL"
+    },
+    {
+        "question": "**Rank the albums by their total sales revenue.**\n\n Display the album's id, title and order by their ranking.\n\n<br/>\n\n_Expected output_:\n\n <img width='600' src='https://i.imgur.com/FZcMa9T.png'>",
+        "resultType": "SQL"
     }
 ]
