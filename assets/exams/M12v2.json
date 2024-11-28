@@ -140,5 +140,9 @@
     {
         "question": "**Rank the albums by their total sales revenue.**\n\n Display the album's id, title and order by their ranking.\n\n<br/>\n\n_Expected output_:\n\n <img width='600' src='https://i.imgur.com/FZcMa9T.png'>",
         "resultType": "SQL"
+    },
+    {
+        "question": "**Find the total amount that each customer spent each month.**\n\n Display their fullname and order by customer name and month\n\n<br/>\n\n_Expected output_:\n\n <img width='600' src='https://i.imgur.com/cjGBxJx.png'>",
+        "resultType": "SQL"
     }
 ]
