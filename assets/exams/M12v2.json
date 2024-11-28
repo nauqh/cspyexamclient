@@ -144,5 +144,9 @@
     {
         "question": "**Find the total amount that each customer spent each month.**\n\n Display their fullname and order by customer name and month\n\n<br/>\n\n_Expected output_:\n\n <img width='600' src='https://i.imgur.com/cjGBxJx.png'>",
         "resultType": "SQL"
+    },
+    {
+        "question": "**Find the total amount each customer spent each month. Include only customers who spent more than $45.**\n\nDisplay their full name and order the results by customer name and month\n\n<br/>\n\n_Expected output_: There must be total **35 rows** in the output\n\n <img width='600' src='https://i.imgur.com/afqIXrv.png'>",
+        "resultType": "SQL"
     }
 ]
