@@ -4,16 +4,21 @@ import types
 import inspect
 import json
 import requests
+import yaml
 
 
 class Submission:
-    def __init__(self, exam_id: str):
+    def __init__(self, exam_id: str, yaml_file: str):
+        # Load exam metadata
         response = requests.get(
             f"https://cspyexamclient.up.railway.app/exams/{exam_id}")
         self.exam = response.json()
 
-        response = requests.get(self.exam['url'])
-        self.questions = json.loads(response.content.decode('utf-8'))
+        # Parse questions from YAML file
+        with open(yaml_file, 'r') as f:
+            self.questions = yaml.safe_load(f)['questions']
+
+        # Initialize answers
         self.answers = [{'question': q['question'], 'answer': ''}
                         for q in self.questions]
 

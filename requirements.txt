@@ -3,3 +3,4 @@ sqlalchemy
 fastapi[all]
 psycopg2-binary
 requests
+pyyaml
