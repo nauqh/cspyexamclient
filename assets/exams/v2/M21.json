@@ -1,0 +1,130 @@
+[
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Given the following code:\n```\nname = \"Tom\"\nheight = 180\n```\n\nWhich of the following `print` statement will give an error?\n\nA. `print(\"My name is \" + name + \" and my height is \" + height)`\n\nB. `print(\"My name is \" + name + \" and my height is \" + str(height))`\n\nC. `print(\"My name is \" + str(name) + \" and my height is \" + str(height))`\n\nD. `print(f\"My name is {name} and my height is {height}\")`"
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Given the following code:\n```\ndef foo(x,y):\n    x = x+1\n    z = 3*x + 2*y\n\nz = 10\nfoo(2, 1)\n```\nWhat is the value of `z` after running the code above?\n\nA. 9\n\nB. 10\n\nC. 11\n\nD. 12"
+    },
+    {
+        "choices": [
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+        ],
+        "resultType": "MULTICHOICE_MANY",
+        "question": "Given the following code:\n```\na = \"Hello World Philippines!\"\n```\n\nWhich of the following are empty strings?\n\n```\nb = a[:3]\nc = a[:-1:-1]\nd = a[0:-1:2]\ne = a[1:-2:-1]\nf = a[-1:0:-1]\ng = a[-3:-1]\n```\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac)."
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Given the following code:\n``` \nlist_1 = [0,1,2,3,4,5]\nlist_2 = list_1\nlist_2[0] +=1\nlist_2 = list_2.pop(5)\n```\n\nWhat is the value of `list_1` after running the code above?\n\nA. `[0, 1, 2, 3, 4]`\n\nB. `[1, 1, 2, 3, 4]`\n\nC. `[1, 1, 2, 3, 4, 5]`\n\nD. `5`"
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Given the following code:\n```\nw = \"good morning Mariana\"\nv = ('a','e','i','o','u')\nt = \"aeiou\"\nl = list(v)\ns = set(t)\n```\nWhich list comprehension returns a list of all vowels in the string `w`?\n\nA. `[c for c in w if c in v]`\n\nB. `[c for c in w if c in t]`\n\nC. `[c for c in w if c in l]`\n\nD. `[c for c in w if c in s]`\n\nE. All of the above"
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_MANY",
+        "question": "Given the following code:\n```\ns = ' _-_CoderSchool Data Science 2022 _ _'\n```\n\nWhich of the following expressions correctly returns the string \"CoderSchool Data Science 2022\"?\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nA. `s.strip('-_ ')`\n\nB. `s.replace('_','').replace('-','').replace(' ','')`\n\nC. `s.replace('_','').replace('-','').strip()`\n\nD. `s.remove('_').remove('-').remove(' ')`"
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_MANY",
+        "question": "Which of the following function definitions is VALID (i.e. run without error)?\n\nChoose **at most** 2 correct choices. To select multiple choices, press `Ctrl`+click (for windows/linux) or `Cmd`+click (for Mac).\n\nNote: this question is not asking if the function works as intended, only if the function definition runs without error.\n\nA.\n```\ndef keys_and_values(new_key, new_val, k=[], v=[]):\nk.append(new_key)\nv.append(new_val)\nreturn k,v\n```\n\nB.\n```\ndef first_ten_fibonacci:\n    fibo_list = [1,1]\n    for i in range(8):\n        next_fibo = fibo_list[i] + fibo_list[i+1]\n        fibo_list.append(next_fibo)\n    return fibo_list\n```\n\nC.\n```\ndef mult_3_plus_1(x):\n    y = 3*x\n    z = y+1\n    return z\n```\n\nD.\n```\ndef sum_of_first_n_numbers():\n    n = int(input())\n    my_sum, i = 0, 1\n    while i <= n:\n        my_sum += i\n    print(f'Sum of first {n} numbers:', my_sum)\n```"
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Remember we have learned about dictionary in python, we know every entry in a dictionary will have a *key* and a *value*.\n\nWhich statement is FALSE about dictionary *keys* and *values*?\n\nA. Keys must be unique.\n\nB. Keys must be immutable.\n\nC. Keys must be string.\n\nD. Values can have duplicates.\n\nE. Values can be of any data type."
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "Which of the following statements about the behavior of round() and ceil() in Python is **NOT** true?\n\nA. round() rounds a number using Banker's rounding method.\n\nB. ceil() always rounds a number up to the nearest integer\n\nC. round() and ceil() will always give the same result.\n\nD. round() can accept an optional second argument to specify the number of decimal places to round to."
+    },
+    {
+        "choices": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ],
+        "resultType": "MULTICHOICE_SINGLE",
+        "question": "What will be the output of the following code?\n\n```\ndef modify_list(lst, val):\n    lst.append(val)\n    lst = [42, 43]\n    return lst\n\noriginal_list = [1, 2, 3]\nnew_list = modify_list(original_list, 4)\nprint(original_list)\nprint(new_list)\n```\n\nA. `[1, 2, 3, 4]` and `[42, 43]`\n\nB. `[1, 2, 3, 4]` and `[1, 2, 3, 4, 42, 43]`\n\nC. `[1, 2, 3]` and `[42, 43]`\n\nD. `[1, 2, 3]` and `[1, 2, 3, 42, 43]`"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "Complete a function to count how many times the smallest number of a list appears in that list.\n\n*Requirements:*\n- **Input:** a `list` of `int`.\n- **Output:** an `int`.\n\n*Example*:\n```\n>>> my_list_1 = [0, 1, 3, 2, 8, 0, 9, 10, 0, 5]\n>>> print(count_min(my_list_1))\n3\n>>> my_list_2 = [-3, 0, 3, 4, 2, -1, 9, 6]\n>>> print(count_min(my_list_2))\n1\n```"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "Complete a function to calculate the difference between maximum and minimum values of a tuple of integers; in other words, the maximum value minus the minimum value of the tuple.\n\n*Requirements:*\n- **Input:** a `tuple` of `int`.\n- **Output:** an `int`. The difference between the max and min of the input tuple.\n\n*Example*:\n```\n>>> my_tuple_1 = (0, 1, 3, 2, 8, 0, 9, 10, 0, 5)\n>>> print(calculate_range(my_tuple_1))\n10\n>>> my_tuple_2 = (-3, 0, 3, 4, 2, -1, 9, 6)\n>>> print(calculate_range(my_tuple_2))\n12\n```"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "Complete a function that reads an email address, and returns either the username or the domain name depending on the second argument.\n\nConsider an example email: `chinh.nguyen@coderschool.vn`.\n- The username is the part before \"@\" (`chinh.nguyen`)\n- The domain name is the part after \"@\" (`coderschool.vn`)\n\n*Requirements:*\n\n- **Input:** the function requires two inputs in this order:\n    - **First argument**: a `string`. This is the email address.\n    - **Second argument**: a `boolean`. If `True`, returns the username; otherwise returns the domain name.\n- **Output:** A `string`. Username or domain name.\n\n*Example:*\n```\n>>> print(extract_email('chinh.nguyen@coderschool.vn', True))\nchinh.nguyen\n>>> print(extract_email('alexa1234@gmail.com', False))\ngmail.com\n>>> print(extract_email('Joh*_D03+14/12@obviousscam.com', True))\nJoh*_D03+14/12\n```"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "In the receipt of a certain shop, each item is listed with its unit weight (weight of a single unit), unit price (price of a single unit), and the number of units that was bought. \n\nIn python, each item can be represented as a dictionary like so:\n```\nitem_1 = {'unit_weight': 1, 'unit_price': 2, 'number_of_units': 5}\nitem_2 = {'unit_weight': 2.3, 'unit_price': 0.4, 'number_of_units': 3}\n...\n```\n\nComplete a function to calculate the ***total weight and total price of one item***, and return one of those values depending on a second input argument.\n\n*Requirements:*\n\n- **Input:** the function requires two inputs in this order:\n    - **First argument:** a `dict`. This is a dictionary representing a single item as described above.\n    - **Second argument:** a `boolean`. If `True`, returns the total weight of the input item; otherwise returns the total price.\n\n- **Output:** A number. Total weight or total price.\n\nFor example:\n```\n>>> item_1 = {'unit_weight': 1.5, 'unit_price': 2, 'number_of_units': 5}\n>>> print(item_calculator(item_1, True))\n7.5\n>>> print(item_calculator(item_1, False))\n10\n```"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "In the previous question you were tasked with creating a function that can calculate the total weight or total price of one item.\n\nGiven a receipt like one of the examples below:\n```\n>>> receipt_1 = {\n    'milk':   {'unit_weight': 1, 'unit_price': 10, 'number_of_units': 3},\n    'rice':   {'unit_weight': 2, 'unit_price': 5, 'number_of_units': 4},\n    'cookie': {'unit_weight': 0.2, 'unit_price': 2, 'number_of_units': 10},\n    'sugar':  {'unit_weight': 0.5, 'unit_price': 7, 'number_of_units': 2},\n}\n>>> receipt_2 = {\n    'chair': {'unit_weight': 4.5, 'unit_price': 15, 'number_of_units': 2},\n    'desk':  {'unit_weight': 10, 'unit_price': 22.5,  'number_of_units': 1}\n}\n...\n```\n\nComplete a function to return the name of the *heaviest item* in the receipt based on the **total weight** (*NOT* the unit weight).\n\n> **NOTE:** the receipt may have items other than the ones in the example. Make sure your code works with any receipt that follows the format above, which can have any item name.\n\n*Requirements:*\n\n- **Input:** a `dict`. This is a dictionary representing a receipt of items as described above.\n\n- **Output:** a `string`. This is the name of the heaviest item in the receipt.\n\nFor example:\n```\n>>> print(heaviest_item(receipt_1))\nrice\n>>> print(heaviest_item(receipt_2))\ndesk\n```"
+    },
+    {
+        "resultType": "FUNCTION",
+        "question": "Given a receipt like one of the examples below:\n```\n>>> receipt_1 = {\n    'milk':   {'unit_weight': 1, 'unit_price': 10, 'number_of_units': 3},\n    'rice':   {'unit_weight': 2, 'unit_price': 5, 'number_of_units': 4},\n    'cookie': {'unit_weight': 0.2, 'unit_price': 2, 'number_of_units': 10},\n    'sugar':  {'unit_weight': 0.5, 'unit_price': 7, 'number_of_units': 2},\n}\n>>> receipt_2 = {\n    'chair': {'unit_weight': 4.5, 'unit_price': 15, 'number_of_units': 2},\n    'desk':  {'unit_weight': 10, 'unit_price': 22.5,  'number_of_units': 1}\n}\n...\n```\n\nSimilar to the last question, complete a function to return the name of the *most expensive item* in the receipt based on the **total price** (*NOT* the unit price).\n\n> **NOTE:** the receipt may have items other than the ones in the example. Make sure your code works with any receipt that follows the format above, which can have any item name.\n\n*Requirements:*\n\n- **Input:** a `dict`. The receipt dictionary.\n\n- **Output:** a `string`. The name of the most expensive item in the receipt.\n\nFor example:\n```\n>>> print(priciest_item(receipt_1))\nmilk\n>>> print(priciest_item(receipt_2))\nchair\n```"
+    }
+]
