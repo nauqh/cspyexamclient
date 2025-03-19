@@ -177,6 +177,6 @@
         "choices": [],
         "_id": "628b0fedebe1b1001ed1d220",
         "resultType": "EXPRESSION",
-        "question": "Among those 5 most common Job Titles of the whole dataset, how have the avarage Base Pay, Overtime Pay, and Total Pay changed over 4 years of the dataset?\n\nHint: Start by identifying the most common jobs, then filter the dataset before computing the summary. \n\nYou may use functions like `isin()`, `value_counts()`.\n\n*Your output should look like this.*\n\n<img src='https://i.imgur.com/YUANVVF.png' width=1000>"
+        "question": "Among those 5 most common Job Titles of the whole dataset, how have the avarage Base Pay, Overtime Pay, and Total Pay changed over 4 years of the dataset? Write a **single-line** expression for your answer\n\nHint: Start by identifying the most common jobs, then filter the dataset before computing the summary. \n\nYou may use functions like `isin()`, `value_counts()`.\n\n*Your output should look like this.*\n\n<img src='https://i.imgur.com/YUANVVF.png' width=1000>"
     }
 ]
